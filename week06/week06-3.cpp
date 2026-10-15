@@ -1,0 +1,15 @@
+//week06-3.cpp Robot Return to
+class Solution {
+public:
+    bool judgeCircle(string moves) {
+        int x=0, y=0;
+        for (char c:moves){//week02 C++¶i¶¥for°j°é
+            if (c=='U') y++;
+            if (c=='D') y--;
+            if (c=='L') x++;
+            if (c=='R') x--;
+        }
+        if (x==0 && y==0) return true;
+        else return false;
+    }
+};
